@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="#000000"
+    android:paddingTop="30dp"
+    tools:context=".Green">
+
+    <TextView
+        android:id="@+id/Leveltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:background="#020000"
+        android:fontFamily="sans-serif-light"
+        android:paddingTop="20dp"
+        android:text="LEVEL 1"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/BlueButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/Leveltxt"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="172dp"
+        android:backgroundTint="#000000"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/inetmobblue" />
+
+    <ImageButton
+        android:id="@+id/GreenButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/Leveltxt"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="574dp"
+        android:backgroundTint="#000000"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/inetmobgreen" />
+
+    <ImageButton
+        android:id="@+id/RedButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/Leveltxt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="99dp"
+        android:backgroundTint="#000000"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/inetmobred" />
+
+    <ImageButton
+        android:id="@+id/YellowButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/Leveltxt"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="374dp"
+        android:backgroundTint="#000000"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/inetmobyellow" />
+
+    <EditText
+        android:id="@+id/scoreText"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Leveltxt"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="445dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="100%"
+        android:textAlignment="center"
+        android:textColor="#EFEFEF"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Leveltxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="920dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Next Level >"
+        android:textSize="40sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/restartBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Leveltxt"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="842dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="RESTART"
+        android:textSize="40sp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
