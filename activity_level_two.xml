@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layerLvl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/blueBtn_one"
+        android:background="#00433D3D"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="80dp"
+        android:text="Tap Anywhere To Start"
+        android:textColor="#FFFFFF"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/scoreDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/greenBtn_one"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="90dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:tag="1"
+        app:backgroundTint="#0077FC96"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellowBtn_one"
+        app:strokeColor="#77FC96"
+        app:strokeWidth="6dp" />
+
+    <Button
+        android:id="@+id/yellowBtn_one"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:tag="4"
+        app:backgroundTint="#00FEDD9D"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/greenBtn_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:strokeColor="#FEDD9D"
+        app:strokeWidth="6dp" />
+
+    <Button
+        android:id="@+id/redBtn_one"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:tag="3"
+        app:backgroundTint="#00FCC3B9"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/blueBtn_one"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:strokeColor="#FCC3B9"
+        app:strokeWidth="6dp" />
+
+    <Button
+        android:id="@+id/purpleBtn_one"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:tag="3"
+        app:backgroundTint="#00FCC3B9"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/blueBtn_one"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.645"
+        app:strokeColor="#F5AAFD"
+        app:strokeWidth="6dp" />
+
+    <Button
+        android:id="@+id/blueBtn_one"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:tag="2"
+        app:backgroundTint="#00AAD5FF"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/redBtn_one"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:strokeColor="#AAD5FF"
+        app:strokeWidth="6dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
